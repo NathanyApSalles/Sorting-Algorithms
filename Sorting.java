@@ -13,7 +13,7 @@
     
     public static void buildHeap(int array[], int tamanho){
         //considerando as posiçoes de 0 a n-1
-        //divide o array no meio para fazer a divisão
+        //divide o array para encontrar o max
         for(int i = tamanho/2 - 1; i >=0; i--)
             maxHeapify(array, i, tamanho);
         
