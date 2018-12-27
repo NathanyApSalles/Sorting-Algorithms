@@ -81,7 +81,7 @@
         System.out.println("\nORDENADO");
         
         int tamanho = array.length;
-        
+         
         heapSort(array, tamanho);
      }
 }
