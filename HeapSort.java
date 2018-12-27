@@ -1,4 +1,4 @@
-﻿public class Sorting{
+﻿public class HeapSort{
     
     public static void printArray(int array[]){
         
