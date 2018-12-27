@@ -13,13 +13,15 @@ public class QuickSort{
     
     public static int partition(int array[], int start, int end){
         
-        int pivot = array[end];
+        int pivot = array[end]; //pivô será o último elemento da partição
         int j = start - 1; // marca qual já foi analisado
         
         for(int i = start; i < end; i++){
             
             if(array[i] <= pivot){
+            	//avança
                 j++;
+                //faz troca
                 int aux = array[j];
                 array[j] = array[i];
                 array[i] = aux;
@@ -28,6 +30,7 @@ public class QuickSort{
             
         }
         
+        //troca pivô
         array[end] = array[j + 1];
         array[j + 1] = pivot;
 
